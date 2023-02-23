@@ -1,0 +1,178 @@
+.fonder {
+    border-radius: 100px;
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    background: #FFD700;
+    transform: translate(20%, 10%);
+}
+
+.t1 {
+    position: center;
+}
+
+
+#gridContainer {
+    padding-bottom: 10px;
+}
+
+table {
+    background-color: #FFFF00;
+    border-spacing: 0;
+}
+
+td {
+    border: 1px solid #FFD700;
+    border-radius: 3px;
+    width: 10px;
+    height: 10px;
+}
+
+span {
+    color: white;
+}
+
+.controls button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    background: none;
+    position: relative;
+    left: 35px;
+    z-index: 0;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.controls button:before {
+    content: '';
+    background: linear-gradient(45deg, #FFFFFF, #F5F5F5, #FFFAFA, #F8F8FF, #FFFFFF, #F5F5F5, #FFFAFA, #F8F8FF, #FFFFFF, #F5F5F5, #FFFAFA, #F8F8FF);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.controls button:active {
+    color: #000;
+}
+
+.controls button:active:after {
+    background: transparent;
+}
+
+.controls button:hover:before {
+    opacity: 1;
+}
+
+.controls button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+td.dead {
+    background-color: transparent;
+}
+
+td.live {
+    background-color: #FF8C00;
+    border: 10px;
+}
+
+
+aside {
+    float: right;
+    width: 20%;
+    padding: 2.5%;
+    color: white;
+    background: #FFD700;
+    height: 100%;
+    border-radius: 100px;
+    border-left: 3px solid #000000;
+}
+
+aside button {
+    width: 200px;
+    height: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    background: none;
+    position: relative;
+    left: -35px;
+    z-index: 0;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+aside button:before {
+    content: '';
+    background: linear-gradient(45deg, #FFFFFF, #F5F5F5, #FFFAFA, #F8F8FF, #FFFFFF, #F5F5F5, #FFFAFA, #F8F8FF, #FFFFFF, #F5F5F5, #FFFAFA, #F8F8FF);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+aside button:active {
+    color: #000;
+}
+
+aside button:active:after {
+    background: transparent;
+}
+
+aside button:hover:before {
+    opacity: 1;
+}
+
+aside button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

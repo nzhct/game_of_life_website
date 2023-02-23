@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset=utf-8>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Our contacts</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'aboutstatic/css/contacts.css' %}">
+        <link rel="shortcut icon" href="{% static 'gamestatic/img/llogo.png' %}">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script src="{% static 'aboutstatic/js/af.js' %}"></script>
+        <link rel="script" href="{% static 'aboutstatic/js/af.js' %}"/>
+    </head>
+    <body style="background-image: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1613181901_11-p-zheltie-foni-pustie-13.jpg)">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="container">
+                    <img class="lg" src="{% static 'gamestatic/img/llogo.png' %}" width="90" height="70" alt="Logo" style="text-decoration: none; border-radius: 10px;">
+                    <button class="b2" onclick="location.href = '/'">Главная</button>
+                    <button class="b1" onclick="location.href = '/about'">Больше об игре</button>
+                    <button class="b3" onclick="location.href = '/about/secret'">Секретные материалы</button>
+                </div>
+            </div>
+        </div>
+        <h1>Контакты для связи с нашими сотрудниками</h1>
+        <div class="co">
+            <div class="sg">
+                <img src="{% static 'aboutstatic/img/1.png' %}">
+                <p> Щерчук Глеб</p>
+                <p> aaa@bbb.com</p>
+            </div>
+            <div class="dm">
+                <img src="{% static 'aboutstatic/img/2.png' %}">
+                <p> Дворцов Мстислав</p>
+                <p> aaa@bbb.com</p>
+            </div>
+            <div class="aj">
+                <img src="{% static 'aboutstatic/img/3.png' %}">
+                <p> Архипова Юлия</p>
+                <p> aaa@bbb.com</p>
+            </div>
+            <div class="vv">
+                <img src="{% static 'aboutstatic/img/4.png' %}">
+                <p> Васильев Виталий</p>
+                <p> aaa@bbb.com</p>
+            </div>
+        </div>
+        <img class="ad" src="{% static 'aboutstatic/img/adres.jpg' %}" width="1600" height="450">
+    </body>
+</html>
