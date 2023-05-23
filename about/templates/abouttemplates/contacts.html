@@ -18,7 +18,7 @@
             <div class="navbar-inner">
                 <div class="container">
                     <img class="lg" src="{% static 'gamestatic/img/llogo.png' %}" width="90" height="70" alt="Logo" style="text-decoration: none; border-radius: 10px;">
-                    <button class="b2" onclick="location.href = '/'">Главная</button>
+                    <button class="b2" onclick="location.href = '/game'">Главная</button>
                     <button class="b1" onclick="location.href = '/about'">Больше об игре</button>
                     <button class="b3" onclick="location.href = '/about/secret'">Секретные материалы</button>
                 </div>
@@ -47,6 +47,8 @@
                 <p> aaa@bbb.com</p>
             </div>
         </div>
-        <img class="ad" src="{% static 'aboutstatic/img/adres.jpg' %}" width="1600" height="450">
+        <div class="map">
+           <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af006ae45da84710af2e623cdad5741ce6436e279207fa95da571d841142ee1e4&amp;width=100%25&amp;height=450&amp;margin-left=auto&amp;margin-right=auto&amp;lang=ru_RU&amp;scroll=true"></script>
+        </div>
     </body>
 </html>

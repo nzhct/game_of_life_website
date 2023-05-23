@@ -1,3 +1,7 @@
+* {
+    cursor: url('https://snipp.ru/demo/712/pointer-1.cur') 4 1, default;
+}
+
 .fonder {
     border-radius: 100px;
     position: absolute;

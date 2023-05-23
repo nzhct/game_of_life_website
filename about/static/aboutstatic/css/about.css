@@ -1,3 +1,8 @@
+* {
+    cursor: url('https://snipp.ru/demo/712/pointer-1.cur') 4 1, default;
+}
+
+
 body {
     font-family:'Roboto', sans-serif;
     color: #FFF;
@@ -119,8 +124,12 @@ button:after {
     posirion: static;
     width: 1300px;
     height: 750px;
-    margin-left: 270px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5px;
+    background-color: #f2ddc6;
+    border-radius: 15%;
+    border: solid black;
 }
 
 
@@ -135,6 +144,7 @@ button:after {
     font-size: 100%;
     float: left;
     color: #000;
+    padding: 10px;
 }
 
 .button {
@@ -185,4 +195,11 @@ button:after {
     opacity: 0;
     transition: opacity .3s ease-in-out;
     border-radius: 10px;
+}
+.teach {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 1%;
 }

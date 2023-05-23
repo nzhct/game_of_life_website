@@ -9,7 +9,6 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -31,6 +30,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'door',
     'game',
     'about',
     'django.contrib.admin',
@@ -121,7 +121,9 @@ STATIC_URL = '/static/'
 
 
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    'C:/Users/Глеб/PycharmProjects/game_of_life_website/door/static',
+    'C:/Users/Глеб/PycharmProjects/game_of_life_website/game/static',
+    'C:/Users/Глеб/PycharmProjects/game_of_life_website/about/static',
 
 ]
 # Default primary key field type

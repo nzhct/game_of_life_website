@@ -1,3 +1,8 @@
+* {
+    cursor: url('https://snipp.ru/demo/712/pointer-1.cur') 4 1, default;
+}
+
+
 body {
     font-family:'Roboto', sans-serif;
     color: #FFF;
@@ -178,10 +183,6 @@ h1 {
     font-size: 20px;
 }
 
-
-.ad {
-    position: absolute;
-    top: 500px;
-    left: 140px;
-    border-radius: 10px;
+.map {
+    margin-top: 8%;
 }

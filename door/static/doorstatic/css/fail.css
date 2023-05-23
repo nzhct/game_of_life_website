@@ -1,0 +1,28 @@
+* {
+    cursor: url('https://snipp.ru/demo/712/pointer-1.cur') 4 1, default;
+}
+
+
+body {
+    position: fixed;
+    padding: 5%;
+    top: 47%;
+    left: 50%;
+    font-size: 45px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+p {
+    background: black;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    padding: 5%;
+}
+
+img {
+    width: 50%;
+    border-radius: 15px;
+}
