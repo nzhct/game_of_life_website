@@ -3,7 +3,7 @@ let btn = document.querySelector('#go');
 
 btn.onclick = function () {
     if (inputin.value == 'thebestwebsiteofalltime') {
-        window.location.href = 'http://127.0.0.1:8000/game/';
+        window.location.href = 'http://127.0.0.1:8000/reg';
     } else {
         window.location.href = 'http://127.0.0.1:8000/fail';
     }
